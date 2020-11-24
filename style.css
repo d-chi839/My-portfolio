@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(46, 45, 45);
+    font-family: 'Charter','Helvetica','Yu Gothic','Osaka',sans-serif;
+}
+/* タブ */
+.menu {
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding-top: 16px;
+    list-style: none;
+}
+.fa-home {
+    color: black;
+}
+.fa-user-alt {
+    color: rgb(97, 97, 228);
+}
+.fa-pencil-alt {
+    color: rgb(109, 223, 231);
+}
+.fa-desktop {
+    color: rgb(223, 99, 161);
+}
+.menu li a i {
+    margin: 10px;
+    font-size: 18px;
+}
+.menu li a {
+    text-align: center;
+    padding: 8px 10px 0px;
+    width: 75px;
+}
+.menu li p {
+    font-size: 10px;
+}
+.menu li a:hover {
+    background-color: rgb(247, 247, 247);
+}
+#item1-tab > p {
+    color: black;
+}
+#item2-tab > p {
+    color: rgb(61, 61, 245);
+}
+#item3-tab > p {
+    color: rgb(109, 223, 231);
+}
+#item4-tab > p {
+    color: rgb(223, 99, 161);
+}
+
+/* タブ内容 */
+.tab1-content,
+.tab2-content,
+.tab3-content,
+.tab4-content {
+    background-image: url(https://www.pakutaso.com/shared/img/thumb/texture524_7_TP_V.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:rgba(255,255,255,0.6);
+    background-blend-mode:lighten;
+    height: 100vh;
+}
+.page {
+    padding: 16px 0;
+    text-align: center;
+    padding-top: 200px;
+}
+.profile, .skills, .application {
+    padding: 16px 0;
+    text-align: center;
+    padding-top: 120px;
+}
+.tab1-content {
+    opacity: .7;
+}
+.tab2-content {
+    background-image: url(https://pro-foto.jp/free/img/images_big/sor0087-024.jpg);
+    color: rgb(61, 61, 61);
+}
+.tab3-content {
+    background-image: url(https://www.pakutaso.com/shared/img/thumb/PAK15_notepenhikkiyougu20140312_TP_V.jpg);
+    color: rgb(61, 61, 61);
+}
+.tab4-content {
+    background-image: url(https://www.pakutaso.com/shared/img/thumb/TKL6149656_TP_V.jpg);
+    background-color: rgba(240, 202, 221, 0.9);
+    color: rgb(61, 61, 61);
+}
+h2 {
+    font-weight: 700;
+    opacity: .9;
+}
+
+/* トップ */
+.page h1 {
+    font-size: 42px;
+    color: #000;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px black;
+}
+.page p {
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+/* プロフィール */
+.profile {
+    width: 100%;
+}
+.profile ul {
+    padding: 0;
+    margin: 0 auto;
+    background-color: transparent;
+    list-style: none;
+}
+.profile li {
+    margin-left: 15px;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 30px;
+    color: black;
+}
+.profile li p {
+    margin: 0 0 0 30px;
+    font-size: 12px;
+    color: gray;
+    display: inline-block;
+    font-size: 14px;
+}
+.profile img {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    opacity: 1;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px black;
+}
+
+/* スキル */
+.skills h2 {
+    margin-bottom: 20px;
+}
+.skills div {
+    background-color: transparent;
+}
+.skills i {
+    font-size: 18px;
+    padding: 0;
+}
+.skills .card p {
+    display: inline-block;
+    margin: 0 0 0 7px;
+    color: rgb(107, 106, 106);
+}
+.skills .card button {
+    width: 100%;
+}
+.fa-html5 {
+    color: orange;
+}
+.fa-css3 {
+    color: rgb(121, 201, 233);
+}
+.fa-bootstrap {
+    color: rgb(141, 10, 141);
+}
+.fa-js {
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+}
+.fa-js > p {
+    text-shadow: none;
+}
+.fa-vuejs {
+    color: rgb(47, 255, 64);
+}
+.skills .study {
+    list-style: none;
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.skills .study li {
+    margin-top: 10px;
+}
+.skills .study li:first-child {
+    margin-top: 0px;
+}
+/* アプリ */
+.app {
+    margin: 20px 0;
+}
+.app .search-photo {
+    margin-top: 20px;
+}
+.app p {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 14px;
+    color: rgb(92, 91, 91);
+}
+.app img:hover {
+    opacity: .8;
+}
+
+@media(min-width:576px) {
+    /* タブ */
+    .nav-tabs .nav-link {
+        padding: 10px 0 0;
+        width: 120px;
+    }
+    /* タブ内容 */
+    .profile, .skills, .application {
+        padding-top: 150px;
+    }
+    
+    /* トップ */
+    div .page {
+        padding-top: 250px;
+    }
+    .page h1 {
+        font-size: 50px;
+    }
+    .page p {
+        font-size: 28px;
+    }
+    /* プロフィール */
+    .profile div {
+        margin: 0 auto;
+    }
+    .profile img {
+        margin-left: auto;
+    }
+    .profile ul {
+        margin-left: 50px;
+    }
+    /* スキル */
+    .skills .study {
+        text-align: center;
+    }    
+    /* アプリ */
+    .app p {
+        margin-left: 20px;
+    }
+    .app .search-photo {
+        padding-top: 0px;
+        margin-top: 20px;
+    }
+    .would-weather {
+        margin-top: 50px;
+    }
+    .would-weather div,
+    .search-photo div {
+        margin-left: auto;
+    }
+}

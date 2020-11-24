@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Daichi's Portfolio Website</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <main>
+        <ul class="menu nav nav-tabs justify-content-center" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="item1-tab" data-toggle="tab" href="#item1" role="tab" aria-controls="item1" aria-selected="true"><i class="fas fa-home"></i><p>トップ</p></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="item2-tab" data-toggle="tab" href="#item2" role="tab" aria-controls="item2" aria-selected="false"><i class="fas fa-user-alt"></i><p>プロフィール</p></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="item3-tab" data-toggle="tab" href="#item3" role="tab" aria-controls="item3" aria-selected="false"><i class="fas fa-pencil-alt"></i><p>スキル</p></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="item4-tab" data-toggle="tab" href="#item4" role="tab" aria-controls="item4" aria-selected="false"><i class="fas fa-desktop"></i><p>アプリ</p></a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="item1" role="tabpanel" aria-labelledby="item1-tab">
+                <div class="tab1-content">
+                    <div class="page">
+                        <h1>My Portfolio</h1>
+                        <p>Daichi Shimizu</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="item2" role="tabpanel" aria-labelledby="item2-tab">
+                <div class="tab2-content text-center">
+                    <div class="profile text-center">
+                        <h2>- Profile -</h2>
+                        <div class="d-sm-flex mt-sm-5">
+                            <img src="img/IMG_3827.jpeg" class="my-sm-auto ml-sm-auto" alt="">
+                            <ul class="w-auto">
+                                <li>名前 ：<p>清水　大智　　Shimizu Daichi</p></li>
+                                <li>出身 ：<p>埼玉県</p></li>
+                                <li>家族 ：<p>妻、子2人(双子の女の子)の4人家族</p></li>
+                                <li>趣味 ：<p>プロ野球観戦</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="item3" role="tabpanel" aria-labelledby="item3-tab">
+                <div class="tab3-content">
+                    <div class="skills">
+                        <h2>- Skills -</h2>
+                        <section class="accordion" id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="header-1">
+                                    <button class="btn btn-link" type="button"
+                                        data-toggle="collapse" data-target="#card-1"
+                                        aria-expanded="true" aria-controls="card-1">
+                                        <i class="fab fa-html5"><p>HTML 5</p></i>
+                                        
+                                    </button>
+                                </div>
+                                <div id="card-1" class="collapse" aria-labelledby="header-1" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <ul class="study">
+                                            <li>学習開始：<p>' 20年　６月〜</p></li>
+                                            <li>学習方法：<p>模写コーディング Webアプリ制作等</p></li>
+                                            <li>サービス：<p>Progate TechAcademy YouTube</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="header-2">
+                                    <button class="btn btn-link" type="button"
+                                        data-toggle="collapse" data-target="#card-2"
+                                        aria-expanded="false" aria-controls="card-2">
+                                        <i class="fab fa-css3"><p>CSS 3</p></i>
+                                        
+                                    </button>
+                                </div>
+                                <div id="card-2" class="collapse" aria-labelledby="header-2" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <ul class="study">
+                                            <li>学習開始：<p>' 20年　６月〜</p></li>
+                                            <li>学習方法：<p>模写コーディング Webアプリ制作等</p></li>
+                                            <li>サービス：<p>Progate TechAcademy YouTube</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="header-3">
+                                    <button class="btn btn-link" type="button"
+                                        data-toggle="collapse" data-target="#card-3"
+                                        aria-expanded="false" aria-controls="card-3">
+                                        <i class="fab fa-bootstrap"><p>Bootstrap</p></i>
+                                    </button>
+                                </div>
+                                <div id="card-3" class="collapse" aria-labelledby="header-3" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <ul class="study">
+                                            <li>学習開始：<p>' 20年　８月〜</p></li>
+                                            <li>学習内容：<p>模写コーディング Webサイト制作</p></li>
+                                            <li>サービス：<p>YouTube TechAcademy</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="header-4">
+                                <button class="btn btn-link" type="button"
+                                    data-toggle="collapse" data-target="#card-4"
+                                    aria-expanded="false" aria-controls="card-4">
+                                    <i class="fab fa-js"><p>JavaScript</p></i>
+                                    
+                                </button>
+                                </div>
+                                <div id="card-4" class="collapse" aria-labelledby="header-4" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <ul class="study">
+                                            <li>学習開始：<p>' 20 ９月〜</p></li>
+                                            <li>学習内容：<p>Webアプリ制作(JavaScript,jQuery)</p></li>
+                                            <li>サービス：<p>Purogate YouTube TechAcademy等</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="header-5">
+                                <button class="btn btn-link" type="button"
+                                    data-toggle="collapse" data-target="#card-5"
+                                    aria-expanded="false" aria-controls="card-5">
+                                    <i class="fab fa-vuejs"><p>Vue.js</p></i>
+                                    
+                                </button>
+                                </div>
+                                <div id="card-5" class="collapse" aria-labelledby="header-5" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <ul class="study">
+                                            <li>学習開始：<p>' 20 10月〜</p></li>
+                                            <li>学習内容：<p>Webアプリ制作</p></li>
+                                            <li>サービス：<p>TechAcademy</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="item4" role="tabpanel" aria-labelledby="item4-tab">
+                <div class="tab4-content">
+                    <div class="application">
+                        <h2>- Application -</h2>
+                        <div class="app d-sm-flex flex-column align-content-between">
+                            <div class="would-weather d-sm-flex">
+                                <div>
+                                    <a href="World-Weather/index.html" target="_blank"><img src="img/wouldweather.png" width="150" height="150" alt=""></a>
+                                </div>
+                                <p class="text-center">世界中の都市の天気情報を調べることができるアプリです。(画像をクリックできます)</p>
+                            </div>
+                            <div class="search-photo d-sm-flex">
+                                <div>
+                                    <a href="Search-Photo/index.html" target="_blank"><img src="img/searchphoto.png" width="150" height="150" alt=""></a>
+                                </div>
+                                <p class="text-center">写真をフリーワードで検索して、検索結果を画面に表示するアプリです。(画像をクリックできます)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+      </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
