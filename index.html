@@ -31,7 +31,7 @@
         <div class="tab-content">
             <div class="tab-pane fade show active" id="item1" role="tabpanel" aria-labelledby="item1-tab">
                 <div class="tab1-content">
-                    <div class="page">
+                    <div id="title" class="page">
                         <h1>My Portfolio</h1>
                         <p>Daichi Shimizu</p>
                     </div>
@@ -49,6 +49,12 @@
                                 <li>出身 ：<p>埼玉県</p></li>
                                 <li>家族 ：<p>妻、子2人(双子の女の子)の4人家族</p></li>
                                 <li>趣味 ：<p>プロ野球観戦</p></li>
+                                <li>自己紹介：<p>平成2年11月14日生まれ　O型<br>
+                                    2018年に結婚、2020年2月に双子の女の子の父親になりました。<br>
+                                    マイペースですが、真面目だとよく言われます。
+                                    スポーツは、極真空手を習っていました。
+                                    好きな言葉は、「雨垂れ石を穿つ」です。コツコツといろいろな技術を身に付けながら成長して行きたいと思います。
+                                    </p></li>
                             </ul>
                         </div>
                     </div>
@@ -64,7 +70,7 @@
                                 <div class="card-header" id="header-1">
                                     <button class="btn btn-link" type="button"
                                         data-toggle="collapse" data-target="#card-1"
-                                        aria-expanded="true" aria-controls="card-1">
+                                        aria-expanded="false" aria-controls="card-1">
                                         <i class="fab fa-html5"><p>HTML 5</p></i>
                                         
                                     </button>
@@ -73,8 +79,8 @@
                                     <div class="card-body">
                                         <ul class="study">
                                             <li>学習開始：<p>' 20年　６月〜</p></li>
-                                            <li>学習方法：<p>模写コーディング Webアプリ制作等</p></li>
-                                            <li>サービス：<p>Progate TechAcademy YouTube</p></li>
+                                            <li>学習方法：<p>模写コーディング Webアプリ制作等<br>
+                                                        独学サービスで学習した後TechAcademyを受講し,Webアプリ制作をしました。</p></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -93,8 +99,8 @@
                                     <div class="card-body">
                                         <ul class="study">
                                             <li>学習開始：<p>' 20年　６月〜</p></li>
-                                            <li>学習方法：<p>模写コーディング Webアプリ制作等</p></li>
-                                            <li>サービス：<p>Progate TechAcademy YouTube</p></li>
+                                            <li>学習方法：<p>模写コーディング Webアプリ制作等<br>
+                                                        独学サービスで学習した後TechAcademyを受講し、Webアプリ制作をしました。</p></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -112,9 +118,9 @@
                                     <div class="card-body">
                                         <ul class="study">
                                             <li>学習開始：<p>' 20年　８月〜</p></li>
-                                            <li>学習内容：<p>模写コーディング Webサイト制作</p></li>
-                                            <li>サービス：<p>YouTube TechAcademy</p></li>
-                                        </ul>
+                                            <li>学習方法：<p>模写コーディング Webアプリ制作等<br>
+                                                独学サービスで学習した後TechAcademyを受講し,Webアプリ制作をしました。</p></li>
+                                </ul>
                                     </div>
                                 </div>
                             </div>
@@ -131,10 +137,10 @@
                                 <div id="card-4" class="collapse" aria-labelledby="header-4" data-parent="#accordion">
                                     <div class="card-body">
                                         <ul class="study">
-                                            <li>学習開始：<p>' 20 ９月〜</p></li>
-                                            <li>学習内容：<p>Webアプリ制作(JavaScript,jQuery)</p></li>
-                                            <li>サービス：<p>Purogate YouTube TechAcademy等</p></li>
-                                        </ul>
+                                            <li>学習開始：<p>' 20 ８月〜</p></li>
+                                            <li>学習方法：<p>Webアプリ制作等<br>
+                                                独学サービスで学習した後TechAcademyを受講し,Webアプリ制作をしました。</p></li>
+                                </ul>
                                     </div>
                                 </div>
                             </div>
@@ -152,8 +158,8 @@
                                     <div class="card-body">
                                         <ul class="study">
                                             <li>学習開始：<p>' 20 10月〜</p></li>
-                                            <li>学習内容：<p>Webアプリ制作</p></li>
-                                            <li>サービス：<p>TechAcademy</p></li>
+                                            <li>学習方法：<p>Webアプリ制作等<br>
+                                                独学サービスで学習した後TechAcademyを受講し,Webアプリ制作をしました。</p></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -172,13 +178,17 @@
                                 <div>
                                     <a href="World-Weather/index.html" target="_blank"><img src="img/wouldweather.png" width="150" height="150" alt=""></a>
                                 </div>
-                                <p class="text-center">世界中の都市の天気情報を調べることができるアプリです。(画像をクリックできます)</p>
+                                <p class="text-left text-sm-left">世界中の都市の天気情報を調べることができるアプリです。<br>
+                                私の夢は世界をゆっくり見て歩くことなので、世界の天気をリアルタイムで知れたら少し身近に感じることができるかもと思い作りました。
+                                このアプリは、都市名を選びCheck!をクリックすると下に選んだ都市の天気が表示される様になっています。axiosで取得したAPIの情報をVueインスタンスを用いて表示しています。</p>
                             </div>
                             <div class="search-photo d-sm-flex">
                                 <div>
                                     <a href="Search-Photo/index.html" target="_blank"><img src="img/searchphoto.png" width="150" height="150" alt=""></a>
                                 </div>
-                                <p class="text-center">写真をフリーワードで検索して、検索結果を画面に表示するアプリです。(画像をクリックできます)</p>
+                                <p class="text-left text-sm-left">写真をフリーワードで検索して、検索結果を画面に表示するアプリです。 <br>
+                                TeckAcademyで学習した内容の復習を兼ねて作成したアプリケーションです。このアプリはフリーワード検索で検索された画像を１００枚まで表示します。
+                                自分の行きたい国や、興味のある国の画像を検索しています。機能が多いアプリではありませんが、私がTeckAcademyで学習してきた内容が出せていると思います。</p>
                             </div>
                         </div>
                     </div>
@@ -193,5 +203,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="main.js"></script>
+    </body>
 </html>
