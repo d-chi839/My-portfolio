@@ -1,12 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    color: rgb(46, 45, 45);
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgb(27, 27, 27);
     font-family: 'Charter','Helvetica','Yu Gothic','Osaka',sans-serif;
 }
 /* タブ */
 .menu {
-    background-color: #fff;
+    background-color: rgba(32,73,105,1);
     position: fixed;
     z-index: 2;
     width: 100%;
@@ -14,20 +16,20 @@ body {
     list-style: none;
 }
 .fa-home {
-    color: black;
+    color: #fff;
 }
 .fa-user-alt {
-    color: rgb(97, 97, 228);
+    color: #fff;
 }
 .fa-pencil-alt {
-    color: rgb(109, 223, 231);
+    color:#fff;
 }
 .fa-desktop {
-    color: rgb(223, 99, 161);
+    color: #fff;
 }
 .menu li a i {
     margin: 10px;
-    font-size: 18px;
+    font-size: 22px;
 }
 .menu li a {
     text-align: center;
@@ -38,34 +40,41 @@ body {
     font-size: 10px;
 }
 .menu li a:hover {
-    background-color: rgb(247, 247, 247);
+    background-color: rgba(32,73,105,.8);
 }
-#item1-tab > p {
-    color: black;
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: rgb(49, 91, 122);
+    border-color: #dee2e6 #dee2e6 rgb(151, 151, 151);
 }
-#item2-tab > p {
-    color: rgb(61, 61, 245);
+.nav-link p {
+    color: #fff;
 }
-#item3-tab > p {
-    color: rgb(109, 223, 231);
-}
-#item4-tab > p {
-    color: rgb(223, 99, 161);
-}
-
 /* タブ内容 */
 .tab1-content,
-.tab2-content,
-.tab3-content,
-.tab4-content {
+.tab3-content {
     background-image: url(https://www.pakutaso.com/shared/img/thumb/texture524_7_TP_V.jpg);
-    height: 100vh;
+    background-color:rgba(32,73,105,.9);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color:rgba(255,255,255,0.6);
     background-blend-mode:lighten;
     height: 100vh;
 }
+.tab2-content {
+    background-image: url(https://pro-foto.jp/free/img/images_big/sor0087-024.jpg);
+    background-color:rgba(32,73,105,.9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:lighten;
+}
+.tab4-content {
+    background-image: url(https://www.pakutaso.com/shared/img/thumb/TKL6149656_TP_V.jpg);
+    background-color: rgb(255, 255, 255, .7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:lighten;
+}
+
 .page {
     padding: 16px 0;
     text-align: center;
@@ -79,27 +88,18 @@ body {
 .tab1-content {
     opacity: .7;
 }
-.tab2-content {
-    background-image: url(https://pro-foto.jp/free/img/images_big/sor0087-024.jpg);
-    color: rgb(61, 61, 61);
-}
 .tab3-content {
     background-image: url(https://www.pakutaso.com/shared/img/thumb/PAK15_notepenhikkiyougu20140312_TP_V.jpg);
-    color: rgb(61, 61, 61);
-}
-.tab4-content {
-    background-image: url(https://www.pakutaso.com/shared/img/thumb/TKL6149656_TP_V.jpg);
-    background-color: rgba(240, 202, 221, 0.9);
-    color: rgb(61, 61, 61);
 }
 h2 {
+    color: rgba(32,73,105,.9);
     font-weight: 700;
     opacity: .9;
 }
 
 /* トップ */
 .page h1 {
-    font-size: 42px;
+    font-size: 46px;
     color: #000;
     font-weight: 700;
     text-shadow: 2px 2px 5px black;
@@ -114,24 +114,23 @@ h2 {
     width: 100%;
 }
 .profile ul {
-    padding: 0;
+    padding: 10px;
     margin: 0 auto;
     background-color: transparent;
     list-style: none;
+    vertical-align: top;
 }
 .profile li {
     margin-left: 15px;
     text-align: left;
-    font-size: 12px;
     margin-top: 30px;
     color: black;
 }
 .profile li p {
     margin: 0 0 0 30px;
-    font-size: 12px;
-    color: gray;
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
+    vertical-align: top;
 }
 .profile img {
     margin-top: 50px;
@@ -145,7 +144,7 @@ h2 {
 
 /* スキル */
 .skills h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .skills div {
     background-color: transparent;
@@ -157,10 +156,14 @@ h2 {
 .skills .card p {
     display: inline-block;
     margin: 0 0 0 7px;
-    color: rgb(107, 106, 106);
+    color: rgb(70, 69, 69);
 }
 .skills .card button {
     width: 100%;
+}
+.skills span {
+    margin-left: 20px;
+    color: rgb(107, 106, 106);
 }
 .fa-html5 {
     color: orange;
@@ -181,18 +184,58 @@ h2 {
 .fa-vuejs {
     color: rgb(47, 255, 64);
 }
+.card-header button i {
+    font-size: 24px;
+    font-weight: 700;
+}
+.card .card-body {
+    background-color: rgb(248, 247, 247);
+}
 .skills .study {
+    font-weight: 400;
     list-style: none;
     text-align: left;
-    font-size: 14px;
     margin: 0;
     padding: 0;
 }
 .skills .study li {
     margin-top: 10px;
 }
+.skills .study li p {
+    vertical-align: top;
+}
 .skills .study li:first-child {
     margin-top: 0px;
+}
+.skills .card-header span {
+    transition: .5s;
+}
+#accordion button[data-toggle="collapse"]{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+}
+#accordion button[data-toggle="collapse"]::after{
+    content:"";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: rgb(70, 69, 69) 3px solid;
+    border-right: rgb(70, 69, 69) 3px solid;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#accordion button[aria-expanded=false]::after{
+    transform: rotate(45deg);
+    transition-duration: 0.3s;
+}
+#accordion button[aria-expanded=true]::after{
+    transform: rotate(135deg);
+    transition-duration: 0.3s;
 }
 /* アプリ */
 .app {
@@ -202,14 +245,17 @@ h2 {
     margin-top: 20px;
 }
 .app p {
-    width: 50%;
-    margin: 0 auto;
+    padding: 10px;
     margin-top: 14px;
-    color: rgb(92, 91, 91);
+}
+.app img {
+    transition: .1s;
 }
 .app img:hover {
     opacity: .8;
+    transform: scale(1.1);
 }
+
 
 @media(min-width:576px) {
     /* タブ */
@@ -227,28 +273,51 @@ h2 {
         padding-top: 250px;
     }
     .page h1 {
-        font-size: 50px;
+        font-size: 75px;
     }
     .page p {
-        font-size: 28px;
+        font-size: 36px;
     }
     /* プロフィール */
+    .tab2-content {
+        height: 100vh;
+    }
     .profile div {
+        width: 75%;
         margin: 0 auto;
     }
     .profile img {
         margin-left: auto;
     }
     .profile ul {
-        margin-left: 50px;
+        padding-left: 100px;
+    }
+    .profile li p {
+        font-size: 20px;
     }
     /* スキル */
-    .skills .study {
-        text-align: center;
-    }    
+    .tab3-content {
+        height: auto;
+        height: 100vh;
+    }
+    .skills .card-body ul {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .skills .study li p {
+        padding-left: 16px;
+        vertical-align: top;  
+    }
+    .skills h2 {
+        margin-bottom: 70px;
+    }
     /* アプリ */
+    .tab4-content {
+        height: 100vh;
+    }
     .app p {
-        margin-left: 20px;
+        margin: 0 20px;
+        font-size: 20px;
     }
     .app .search-photo {
         padding-top: 0px;
@@ -259,6 +328,7 @@ h2 {
     }
     .would-weather div,
     .search-photo div {
-        margin-left: auto;
+        width: 75%;
+        margin: 0 auto;
     }
 }
