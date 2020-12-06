@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-size: 20px;
     line-height: 1.6;
-    color: rgb(27, 27, 27);
+    color: rgb(43, 42, 42);
     font-family: 'Charter','Helvetica','Yu Gothic','Osaka',sans-serif;
 }
 body p {
@@ -11,7 +11,7 @@ body p {
 }
 /* タブ */
 .menu {
-    background-color: rgba(32,73,105,1);
+    background-color: rgba(27, 40, 59, 0.555);
     position: fixed;
     z-index: 2;
     width: 100%;
@@ -36,18 +36,15 @@ body p {
 }
 .menu li a {
     text-align: center;
-    padding: 8px 10px 0px;
+    padding: 8px 0px 0px;
     width: 75px;
 }
-.menu li p {
+.menu li a p {
     font-size: 10px;
-}
-.menu .nav-link:hover {
-    background-color: rgba(32,73,105,.8);
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #495057;
-    background-color: rgb(49, 91, 122);
+    background-color: rgba(21, 52, 77, 0.377);
     border-color: #dee2e6 #dee2e6 rgb(151, 151, 151);
 }
 .nav-link p {
@@ -56,21 +53,25 @@ body p {
 /* タブ内容 */
 .tab1-content {
     background-image: url(https://www.pakutaso.com/shared/img/thumb/texture524_7_TP_V.jpg);
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .5);
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode:lighten;
     height: 100vh;
+    opacity: .7;
 }
 .tab2-content {
     background-image: url(https://pro-foto.jp/free/img/images_big/sor0087-024.jpg);
-    background-color:rgba(32,73,105,.9);
+    background-color: rgba(255, 255, 255, .5);
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode:lighten;
+    height: 100vh;
+
 }
 .tab3-content {
     background-image: url(https://www.pakutaso.com/shared/img/thumb/PAK15_notepenhikkiyougu20140312_TP_V.jpg);
+    background-color: rgba(255, 255, 255, .5);
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode:lighten;
@@ -78,7 +79,7 @@ body p {
 }
 .tab4-content {
     background-image: url(https://www.pakutaso.com/shared/img/thumb/TKL6149656_TP_V.jpg);
-    background-color: rgb(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .5);
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode:lighten;
@@ -91,18 +92,18 @@ body p {
 .profile, .skills, .application {
     padding: 16px 0;
     text-align: center;
-    padding-top: 120px;
-}
-.tab1-content {
-    opacity: .7;
+    padding-top: 140px;
 }
 h2 {
-    color: rgba(32,73,105,.9);
+    color: rgba(25, 26, 39, 0.9);
+    text-shadow: 2px 2px 2px rgb(112, 110, 110);
     font-weight: 700;
     opacity: .9;
     letter-spacing: 3px;
 }
-
+.application h2 {
+    text-shadow: rgb(211, 206, 206);
+}
 /* トップ */
 .page h1 {
     font-size: 46px;
@@ -121,129 +122,114 @@ h2 {
     width: 100%;
 }
 .profile ul {
-    padding: 10px;
+    padding: 15px;
     margin: 0 auto;
     background-color: transparent;
     list-style: none;
     vertical-align: top;
 }
 .profile li {
-    margin-left: 15px;
     text-align: left;
     margin-top: 30px;
     color: black;
+    font-size: .8rem;
 }
 .profile li p {
-    margin: 0 0 0 30px;
+    float: right;
+    width: 80%;
     display: inline-block;
-    font-size: 16px;
-    vertical-align: top;
-}
-.profile img {
-    margin-top: 50px;
-    width: 100px;
-    height: 100px;
-    border-radius: 4px;
-    opacity: 1;
-    margin-top: 20px;
-    box-shadow: 2px 2px 5px black;
+    font-size: .8rem;
 }
 
 /* スキル */
 .skills h2 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .skills div {
     background-color: transparent;
 }
+.skills .card-body {
+    border-top: .3px solid #d8dde2;
+    background-color: #fff;
+}
 .skills i {
-    font-size: 18px;
-    padding: 0;
+    margin-top: 5px;
 }
-.skills .card p {
+.skills .size {
+    font-size: 2rem;
+}
+.skills p {
+    font-size: .8rem;
+    margin: 5px 0 0 0;
+}
+.skills .study p {
     display: inline-block;
-    margin: 0 0 0 7px;
-    color: rgb(70, 69, 69);
-}
-.skills .card button {
-    width: 100%;
-}
-.skills span {
-    margin-left: 20px;
-    color: rgb(107, 106, 106);
-}
-.fa-html5 {
-    color: orange;
-}
-.fa-css3 {
-    color: rgb(121, 201, 233);
-}
-.fa-bootstrap {
-    color: rgb(141, 10, 141);
-}
-.fa-js {
-    color: yellow;
-    text-shadow: 1px 1px 1px black;
-}
-.fa-js > p {
-    text-shadow: none;
-}
-.fa-vuejs {
-    color: rgb(47, 255, 64);
-}
-.card-header button i {
-    font-size: 24px;
-    font-weight: 700;
-}
-.card .card-body {
-    background-color: rgb(248, 247, 247);
-}
-.skills .study {
-    font-weight: 400;
-    list-style: none;
-    text-align: left;
+    width: 70%;
+    vertical-align: top;
     margin: 0;
+    margin-left: 10%;
+}
+.skills a {
+    display: block;
+}
+.skills .card-header {
     padding: 0;
 }
-.skills .study li {
-    margin-top: 10px;
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.skills .study li p {
-    vertical-align: top;
+.skills ul li {
+    text-align: left;
+    font-size: .8rem;
 }
-.skills .study li:first-child {
-    margin-top: 0px;
+#header-1:hover {
+    background-color: rgba(218, 223, 233, 0.5);
 }
-.skills .card-header span {
-    transition: .5s;
+#header-2:hover {
+    background-color: rgba(218, 223, 233, 0.5);
 }
-#accordion button[data-toggle="collapse"]{
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    position: relative;
+#header-3:hover {
+    background-color: rgba(218, 223, 233, 0.5);
 }
-#accordion button[data-toggle="collapse"]::after{
-    content:"";
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-top: rgb(70, 69, 69) 3px solid;
-    border-right: rgb(70, 69, 69) 3px solid;
-    position: absolute;
-    right: 20px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+#header-4:hover {
+    background-color: rgba(218, 223, 233, 0.5);
 }
-#accordion button[aria-expanded=false]::after{
-    transform: rotate(45deg);
-    transition-duration: 0.3s;
+#header-5:hover {
+    background-color: rgba(218, 223, 233, 0.5);
 }
-#accordion button[aria-expanded=true]::after{
-    transform: rotate(135deg);
-    transition-duration: 0.3s;
+#header-6:hover {
+    background-color: rgba(218, 223, 233, 0.5);
 }
+.skills .fa-html5 {
+    color: rgb(255, 115, 0);
+    text-shadow: 1px 1px 1px gray;
+}
+.skills .fa-css3 {
+    color: rgb(0, 162, 255);
+    text-shadow: 1px 1px 1px gray;
+}
+.skills .fa-bootstrap {
+    color: rgb(132, 0, 255);
+    text-shadow: 1px 1px 1px gray;
+}
+.skills .fa-js {
+    color: rgb(255, 230, 0);
+    text-shadow: 1px 1px 1px gray;
+}
+.skills .fa-vuejs {
+    color: rgb(51, 255, 0);
+    text-shadow: 1px 1px 1px gray;
+}
+.skills .fa-react {
+    color: rgb(0, 247, 255);
+    text-shadow: 1px 1px 1px gray;
+}
+.collapse {
+    padding: 0;
+}
+
 /* アプリ */
 .app {
     margin: 20px 0;
@@ -252,8 +238,9 @@ h2 {
     margin-top: 20px;
 }
 .app p {
-    padding: 10px;
-    margin-top: 14px;
+    margin: 14px auto 0;
+    width: 80%;
+    font-size: 14px;
 }
 .app img {
     transition: .1s;
@@ -261,6 +248,9 @@ h2 {
 .app img:hover {
     opacity: .8;
     transform: scale(1.1);
+}
+.app .search-photo {
+    margin-top: 40px;
 }
 
 
@@ -286,26 +276,17 @@ h2 {
         font-size: 36px;
     }
     /* プロフィール */
-    .tab2-content {
-        height: 100vh;
-    }
     .profile div {
+        padding-top: 50px;
         width: 75%;
         margin: 0 auto;
     }
-    .profile img {
-        margin-left: auto;
-    }
-    .profile ul {
-        padding-left: 100px;
-    }
     .profile li p {
-        font-size: 20px;
+        font-size: 16px;
     }
     /* スキル */
     .tab3-content {
-        height: auto;
-        height: 100vh;
+        padding-bottom: 50px;
     }
     .skills .card-body ul {
         width: 75%;
@@ -324,18 +305,16 @@ h2 {
     }
     .app p {
         margin: 0 20px;
-        font-size: 20px;
+        font-size: 1rem;
     }
-    .app .search-photo {
-        padding-top: 0px;
-        margin-top: 20px;
-    }
-    .would-weather {
+    .would-weather, .search-photo {
+        margin: 0 auto;
         margin-top: 50px;
+        width: 70%;
     }
     .would-weather div,
     .search-photo div {
-        width: 75%;
+        width: 70%;
         margin: 0 auto;
     }
 }
