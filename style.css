@@ -287,6 +287,7 @@ h2 {
     /* スキル */
     .tab3-content {
         padding-bottom: 50px;
+        height: auto;
     }
     .skills .card-body ul {
         width: 75%;
